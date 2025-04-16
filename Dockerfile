@@ -4,5 +4,5 @@ FROM openjdk:19
 EXPOSE 8080
 
 # компируем в контейнер jar со всеми исходниками и библиотеками внутри него
-ADD build/libs/backend-docker-0.0.1-SNAPSHOT-plain.jar /app/app.jar
+ADD build/libs/backend-docker-0.0.1-SNAPSHOT.jar /app/app.jar
 ENTRYPOINT ["java","-Dspring.profiles.active=db,logging", "-jar", "/app/app.jar"]
