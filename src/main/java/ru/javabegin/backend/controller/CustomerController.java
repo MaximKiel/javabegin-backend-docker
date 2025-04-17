@@ -29,4 +29,8 @@ public class CustomerController {
         return ResponseEntity.ok(list);
     }
 
+    @GetMapping("/test")
+    public ResponseEntity<String> test(){
+        return ResponseEntity.ok("test");
+    }
 }
